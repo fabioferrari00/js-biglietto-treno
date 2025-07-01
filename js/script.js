@@ -11,5 +11,9 @@ if (age < 18) {
   discount = price * 40 / 100;
 }
 
+if (isNaN(kmToGo) || isNaN(age)) {
+  alert('ATT100ENZIONE: devi inserire dei numeri');
+}
+
 price = price - discount;
 console.log(price.toFixed(2));
