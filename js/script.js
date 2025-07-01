@@ -1,12 +1,14 @@
 //dichiarazione variabili
-const kmToGo = parseInt(prompt('Inserisci quanti KM vuoi percorrere'));
+const kmToGo = parseFloat(prompt('Inserisci quanti KM vuoi percorrere'));
 const age = parseInt(prompt('Inserisci la tua età per un eventuale sconto'));
-let discount;
+let discount = 0;
 let price = 0.21 * kmToGo;
 
 if (age < 18) {
   discount = price * 20 / 100;
-  price = price - discount;
+} else if (age > 65) {
+  discount = price * 40 / 100;
 }
 
-console.log(price);
+price = price - discount;
+console.log(price.toFixed(2));
