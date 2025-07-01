@@ -4,6 +4,7 @@ const age = parseInt(prompt('Inserisci la tua età per un eventuale sconto'));
 let discount = 0;
 let price = 0.21 * kmToGo;
 
+//logica
 if (age < 18) {
   discount = price * 20 / 100;
 } else if (age > 65) {
