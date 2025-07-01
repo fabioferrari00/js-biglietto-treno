@@ -12,7 +12,7 @@ if (age < 18) {
 }
 
 if (isNaN(kmToGo) || isNaN(age)) {
-  alert('ATT100ENZIONE: devi inserire dei numeri');
+  alert('ATTENZIONE: devi inserire dei numeri');
 }
 
 price = price - discount;
